@@ -1,0 +1,30 @@
+{
+  "alias": "mi-freebsd-9.1",
+  "brand": "kvm",
+  "vcpus": 4,
+  "autoboot": false,
+  "ram": 4096,
+  "resolvers": [
+    "208.67.222.222",
+    "208.67.220.220"
+  ],
+  "disks": [
+    {
+      "boot": true,
+      "model": "ide",
+      "size": 409600
+    }
+  ],
+  "nics": [
+    {
+      "nic_tag": "external",
+      "model": "e1000",
+      "ip": "10.88.88.199",
+      "netmask": "255.255.255.0",
+      "gateway": "10.88.88.2",
+      "primary": 1,
+      "vlan_id": 0
+    }
+  ],
+  "default_gateway": "10.88.88.2"
+}
