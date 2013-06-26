@@ -41,6 +41,9 @@ we leverage to get a base image going.
 
  * The timezone is set to UTC
  * Root ssh logins are enabled for when using a ssh private key
+ * Using DHCPd on the network interfaces -- update /etc/rc.conf to do static IP
+   instead (DHCP on kvm is a bit broken -- the interface sometimes reports as
+   being up but does not receive the dhcpd server response).
 
 ## Post Install
 
