@@ -37,6 +37,11 @@ we leverage to get a base image going.
   </tr>
 </table>
 
+## General Notes
+
+ * The timezone is set to UTC
+ * Root ssh logins are enabled for when using a ssh private key
+
 ## Post Install
 
 ### Switch out native drivers for virtio drivers
